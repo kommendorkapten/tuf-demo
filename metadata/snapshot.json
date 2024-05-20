@@ -2,24 +2,27 @@
  "signatures": [
   {
    "keyid": "b4aa17c5338aeaa2d5ed7171bcd8ae9408b10a612646e7aa95095744f3935f4b",
-   "sig": "3045022100dc922a4b980e86730e082122661b96e117012d5f3a5160beffe6bbb29ca152aa02206d0d34ee9cfa4c7a02530ccb977ff3091ef9aaf57a2910bcdb120936b583fbed"
+   "sig": "3045022100d66ab0dfa72f27168a888915b79a1c29158c18d9d5db92a25742c5964a598fdd02203faebf46cd506e051d01d4bffe00f363f62f6b0e962f803dbcf2350828c8f3c3"
   }
  ],
  "signed": {
   "_type": "snapshot",
-  "expires": "2025-02-19T10:49:54Z",
+  "expires": "2025-03-26T12:09:50Z",
   "meta": {
    "jku.json": {
     "version": 4
+   },
+   "kommendorkapten.json": {
+    "version": 2
    },
    "rdimitrov.json": {
     "version": 2
    },
    "targets.json": {
-    "version": 3
+    "version": 4
    }
   },
   "spec_version": "1.0.31",
-  "version": 7
+  "version": 9
  }
 }

@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - id: build-and-upload-repository
-        uses: theupdateframework/tuf-on-ci/actions/upload-repository@3a44844ab0dc6883849df4039f8494b6f7b5386c # v0.7.0
+        uses: theupdateframework/tuf-on-ci/actions/upload-repository@ebf63d46b20e8c019e7752f8fb57c28931f96cfc # v0.9.0
         with:
           gh_pages: true
           ref: ${{ inputs.ref }}
@@ -33,7 +33,7 @@ jobs:
     steps:
       - name: Deploy TUF-on-CI repository to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@decdde0ac072f6dcbe43649d82d9c635fff5b4e4 # v4.0.4
+        uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e # v4.0.5
 
   test-deployed-repository:
     needs: deploy-to-pages
@@ -49,7 +49,7 @@ jobs:
       issues: 'write' # for modifying Issues
     steps:
       - name: Update the issue for the workflow
-        uses: theupdateframework/tuf-on-ci/actions/update-issue@3a44844ab0dc6883849df4039f8494b6f7b5386c # v0.7.0
+        uses: theupdateframework/tuf-on-ci/actions/update-issue@ebf63d46b20e8c019e7752f8fb57c28931f96cfc # v0.9.0
         with:
           token: ${{ secrets.TUF_ON_CI_TOKEN || secrets.GITHUB_TOKEN }}
           success: ${{ !contains(needs.*.result, 'failure') }}

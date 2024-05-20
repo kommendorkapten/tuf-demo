@@ -1,39 +1,47 @@
 {
  "signatures": [
   {
-   "keyid": "762cb22caca65de5e9b7b6baecb84ca989d337280ce6914b6440aea95769ad93",
-   "sig": "30450221009ab9aa278327daf24c3eb0d0f6e0d6f85c42c0654d20aec80778f3717251298e0220454a6457f84d04889cd54e5a326c79496de38b4c2432152cdd905bbca94de1f0"
+   "keyid": "aa61e09f6af7662ac686cf0c6364079f63d3e7a86836684eeced93eace3acd81",
+   "sig": "304502205e704b9077ff49a25b2ac5da66d75c1bef8d526fc24e5b52a2a3ced0f8aeb3ce022100be9f0c2a39968cfa1e56e7a885f5eb9a52d079001b4eedc27176aa55f61c407c"
   },
   {
-   "keyid": "8da4516e743da10f431b41e37bad5b706efe8e29122c86dbcf849521a815b8c9",
-   "sig": "304502204eeb84b99430e3e8ada62b51363464dae1d94aa24b6cc587960c2e0c3158ca13022100f4d0ee00da61fc3645acd2de43ec2aa2f1cdc06469d9ebc56ba1b34b569b9036"
+   "keyid": "08af0ce41206baf8cf6b31623780d600f960a49367a9725e2eca4dd041f74a41",
+   "sig": ""
   }
  ],
  "signed": {
   "_type": "targets",
   "delegations": {
    "keys": {
-    "762cb22caca65de5e9b7b6baecb84ca989d337280ce6914b6440aea95769ad93": {
-     "keytype": "ecdsa",
-     "keyval": {
-      "public": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEohqIdE+yTl4OxpX8ZxNUPrg3SL9H\nBDnhZuceKkxy2oMhUOxhWweZeG3bfM1T4ZLnJimC6CAYVU5+F5jZCoftRw==\n-----END PUBLIC KEY-----\n"
-     },
-     "scheme": "ecdsa-sha2-nistp256",
-     "x-tuf-on-ci-keyowner": "@jku"
-    },
-    "8da4516e743da10f431b41e37bad5b706efe8e29122c86dbcf849521a815b8c9": {
+    "08af0ce41206baf8cf6b31623780d600f960a49367a9725e2eca4dd041f74a41": {
      "keytype": "ecdsa",
      "keyval": {
       "public": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEeiu8or2aUi7VFURrhwsBecHjIAgP\nn7THYn9t7ZnYbngEsljbm4yKAjh8gXjC3aC0bM1ZQABRybhMgkti6wAu5w==\n-----END PUBLIC KEY-----\n"
      },
      "scheme": "ecdsa-sha2-nistp256",
      "x-tuf-on-ci-keyowner": "@rdimitrov"
+    },
+    "61f9609d2655b346fcebccd66b509d5828168d5e447110e261f0bcc8553624bc": {
+     "keytype": "ecdsa",
+     "keyval": {
+      "public": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE++Wv+DcLRk+mfkmlpCwl1GUi9EMh\npBUTz8K0fH7bE4mQuViGSyWA/eyMc0HvzZi6Xr0diHw0/lUPBvok214YQw==\n-----END PUBLIC KEY-----\n"
+     },
+     "scheme": "ecdsa-sha2-nistp256",
+     "x-tuf-on-ci-keyowner": "@kommendorkapten"
+    },
+    "aa61e09f6af7662ac686cf0c6364079f63d3e7a86836684eeced93eace3acd81": {
+     "keytype": "ecdsa",
+     "keyval": {
+      "public": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEohqIdE+yTl4OxpX8ZxNUPrg3SL9H\nBDnhZuceKkxy2oMhUOxhWweZeG3bfM1T4ZLnJimC6CAYVU5+F5jZCoftRw==\n-----END PUBLIC KEY-----\n"
+     },
+     "scheme": "ecdsa-sha2-nistp256",
+     "x-tuf-on-ci-keyowner": "@jku"
     }
    },
    "roles": [
     {
      "keyids": [
-      "762cb22caca65de5e9b7b6baecb84ca989d337280ce6914b6440aea95769ad93"
+      "aa61e09f6af7662ac686cf0c6364079f63d3e7a86836684eeced93eace3acd81"
      ],
      "name": "jku",
      "paths": [
@@ -44,7 +52,8 @@
     },
     {
      "keyids": [
-      "8da4516e743da10f431b41e37bad5b706efe8e29122c86dbcf849521a815b8c9"
+      "08af0ce41206baf8cf6b31623780d600f960a49367a9725e2eca4dd041f74a41",
+      "aa61e09f6af7662ac686cf0c6364079f63d3e7a86836684eeced93eace3acd81"
      ],
      "name": "rdimitrov",
      "paths": [
@@ -52,10 +61,21 @@
      ],
      "terminating": true,
      "threshold": 1
+    },
+    {
+     "keyids": [
+      "61f9609d2655b346fcebccd66b509d5828168d5e447110e261f0bcc8553624bc"
+     ],
+     "name": "kommendorkapten",
+     "paths": [
+      "kommendorkapten/*"
+     ],
+     "terminating": true,
+     "threshold": 1
     }
    ]
   },
-  "expires": "2025-02-19T09:05:41Z",
+  "expires": "2025-05-20T11:16:28Z",
   "spec_version": "1.0.31",
   "targets": {
    "file1.txt": {
@@ -65,7 +85,7 @@
     "length": 5
    }
   },
-  "version": 3,
+  "version": 5,
   "x-tuf-on-ci-expiry-period": 365,
   "x-tuf-on-ci-signing-period": 60
  }
